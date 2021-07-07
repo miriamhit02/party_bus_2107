@@ -18,4 +18,8 @@ class Bus
     end
     p caps
   end
+
+  def number_of_passengers
+    @passengers.length
+  end
 end
