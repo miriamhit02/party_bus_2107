@@ -22,4 +22,12 @@ class Bus
   def number_of_passengers
     @passengers.length
   end
+
+  def over_capasity?
+    if @passengers.length <= 3
+      false
+    else
+      true
+    end
+  end
 end
