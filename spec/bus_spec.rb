@@ -86,7 +86,6 @@ describe Bus do
       bus.kick_out
 
       expect(bus.number_of_passengers).to eq(4)
-      binding.pry
     end
   end
 end
