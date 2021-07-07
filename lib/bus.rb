@@ -32,6 +32,6 @@ class Bus
   end
 
   def kick_out
-    @passengers.pop
+    @passengers.shift
   end
 end
