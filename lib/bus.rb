@@ -30,4 +30,8 @@ class Bus
       true
     end
   end
+
+  def kick_out
+    @passengers.pop
+  end
 end
