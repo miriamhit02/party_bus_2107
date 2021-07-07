@@ -58,8 +58,20 @@ describe Bus do
 
       expect(bus.number_of_passengers).to eq(3)
     end
+
+    it 'over_capasity?' do
+      bus = Bus.new('Mikes Awesome Bus', 4)
+      bus.add_passenger('Mike')
+      bus.add_passenger('Megan')
+      bus.add_passenger('Tim')
+
+      expect(bus.over_capasity?).to eq(false)
+
+      bus.add_passenger('Eve')
+      bus.add_passenger('Alice')
+
+      expect(bus.over_capasity?).to eq(true)
+
+    end
   end
-
-
-
 end
