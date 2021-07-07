@@ -10,4 +10,12 @@ class Bus
   def add_passenger(new_passenger)
     @passengers << new_passenger
   end
+
+  def yell_at_passengers
+    caps = []
+    @passengers.each do |passenger|
+      caps << passenger.upcase
+    end
+    p caps
+  end
 end
